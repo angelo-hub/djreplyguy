@@ -345,6 +345,7 @@ legend {
 
 .large_image {
   width: 100%;
+  animation: rotation 180s infinite linear;
 }
 
 body {
@@ -354,6 +355,7 @@ body {
 #foreground{
   margin: auto;
   max-width: 600px;
+  width: 80%;
 }
 
 #wrapper{
@@ -367,10 +369,17 @@ body {
 
 .socials {
   // background-color: white;
-  max-width: 600px;
-  width: 90%;
+  width: 100%;
   position: relative;
   margin-top: 15px;
   // padding
 }
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

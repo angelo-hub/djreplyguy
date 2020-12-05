@@ -2805,12 +2805,15 @@ legend { font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont
   50% { background-color: blue; }
   75% { background-color: black; }
   100% { background-color: #7c0c0c; } }
-.large_image { width: 100%; }
+.large_image { width: 100%; animation: rotation 180s infinite linear; }
 
 body { animation: myfirst 18s linear 0s infinite alternate; }
 
-#foreground { margin: auto; max-width: 600px; }
+#foreground { margin: auto; max-width: 600px; width: 80%; }
 
 #wrapper { position: relative; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; }
 
-.socials { max-width: 600px; width: 90%; position: relative; margin-top: 15px; }
+.socials { width: 100%; position: relative; margin-top: 15px; }
+
+@keyframes rotation { from { transform: rotate(0deg); }
+  to { transform: rotate(359deg); } }
