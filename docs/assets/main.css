@@ -2823,3 +2823,4 @@ body { animation: myfirst 18s linear 0s infinite alternate; }
 
 @keyframes rotation { from { transform: rotate(0deg); }
   to { transform: rotate(359deg); } }
+.poster { border-radius: 5px; margin-bottom: 100px; }
